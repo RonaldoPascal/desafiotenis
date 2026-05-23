@@ -26,7 +26,7 @@ export function Navbar({ user, onLoginClick, onLogout, onGoToDashboard, currentP
             </svg>
           </div>
           <div className="text-left">
-            <p className="font-display font-extrabold text-sm leading-none tracking-wider">
+            <p className="font-display font-extrabold text-sm leading-none tracking-wider text-white">
               TÊNIS NO <span className="text-tennis">ALÇAPÃO</span>
             </p>
             <p className="text-white/50 text-xs uppercase tracking-widest mt-0.5">

@@ -3,6 +3,7 @@ import type { TennisSlot } from '@/types'
 import { tennisSlotService } from '@/services/tennisSlotService'
 import { StatsCard } from '@/components/StatsCard'
 import { formatDateShort } from '@/utils/formatters'
+import heroImg from '@/assets/hero.jpg'
 
 interface LandingPageProps {
   onLoginClick: () => void
@@ -62,14 +63,16 @@ export function LandingPage({ onLoginClick }: LandingPageProps) {
             <div className="absolute -inset-4 bg-tennis/5 rounded-3xl blur-2xl
                             group-hover:bg-tennis/10 transition-all duration-500" />
             <div className="relative overflow-hidden rounded-3xl border border-white/10
-                            backdrop-blur-sm bg-white/5 aspect-[4/3]">
-              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br
-                              from-clay-dark/80 to-navy-deep/80">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🎾</div>
-                  <p className="text-white/40 text-sm">Alçapão Central — Saibro</p>
-                  <p className="text-white/20 text-xs mt-1">Condomínio Reserva do Paratehy</p>
-                </div>
+                            shadow-2xl shadow-black/40 aspect-[4/3]">
+              <img
+                src={heroImg}
+                alt="Quadra de saibro — Alçapão Central"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4">
+                <p className="text-white/90 text-sm font-semibold">Alçapão Central — Saibro</p>
+                <p className="text-white/50 text-xs">Condomínio Reserva do Paratehy</p>
               </div>
             </div>
           </div>
