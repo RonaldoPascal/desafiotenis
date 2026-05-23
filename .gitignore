@@ -36,3 +36,5 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+backend/storage/framework/views/*.php
+backend/composer.lock

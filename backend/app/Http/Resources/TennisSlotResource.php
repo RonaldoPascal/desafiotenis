@@ -11,8 +11,8 @@ class TennisSlotResource extends JsonResource
     {
         return [
             'id'              => $this->id,
-            'date'            => $this->date,
-            'time'            => $this->time,
+            'date'            => $this->date->format('Y-m-d'),
+            'time'            => substr($this->time, 0, 5),
             'court'           => $this->court,
             'level'           => $this->level,
             'notes'           => $this->notes,
